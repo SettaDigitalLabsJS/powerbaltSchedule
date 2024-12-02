@@ -1,0 +1,22 @@
+{
+  "name": "powerbaltapp.schedule",
+  "version": "1.0.0",
+  "description": "Chamada endpoint schedule PowerBalt SCBD",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js",
+    "dev": "nodemon --inspect index.js"
+  },
+  "author": "Wallace Muriel",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.7.2",
+    "bree": "^9.2.3",
+    "cabin": "^13.2.6",
+    "dotenv": "^16.4.5",
+    "lodash": "^4.17.21",
+    "moment": "^2.30.1",
+    "nodemon": "^3.1.3"
+  }
+}
