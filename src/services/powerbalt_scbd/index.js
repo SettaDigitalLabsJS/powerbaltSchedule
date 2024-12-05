@@ -26,8 +26,8 @@ const UpdateScbdTrigger = async () => {
 
     async function GetValuesInvertersByPowerStations(x) {
         let invertersJSON;
-        let currentMoment = moment().locale("pt-br").milliseconds(0);
-        let tomorrowMoment = moment().add(1, 'days').locale("pt-br").milliseconds(0);
+        let currentMoment = moment().locale("pt-br").seconds(0).milliseconds(0);
+        let tomorrowMoment = moment().add(1, 'days').locale("pt-br").seconds(0).milliseconds(0);
 
         try {
             invertersJSON = (await axios.get(`${process.env.TECSI_BASE_URL}/power-stations/${x.id}/inverters/generation?start_date=${currentMoment.format("YYYY-MM-DD")}&end_date=${tomorrowMoment.format("YYYY-MM-DD")}`,
